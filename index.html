@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>密碼產生網站</title>
+  <link rel="icon" type="image/x-icon" href="image/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>自製密碼產生器</h1>
+    <div class="output">
+      <input type="text" id="password" readonly>
+      <button onclick="generatePassword()">創建隨機密碼</button>
+    </div>
+    <div class="options">
+      <label for="length">密碼長度(只限4~30字元):</label>
+      <input type="number" id="length" min="4" max="30" value="">
+      <label for="includeNumbers">數字:</label>
+      <input type="checkbox" id="includeNumbers" checked>
+      <label for="includeSymbols">標點符號:</label>
+      <input type="checkbox" id="includeSymbols" checked>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
